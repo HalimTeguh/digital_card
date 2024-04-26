@@ -13,18 +13,31 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LayoutBuilder(
-          builder: (BuildContext context, constraints) {
-            if(constraints.maxWidth < 600){
-              // POTRAIT LAYOUT
-              return CardPotrait(width: constraints.maxWidth);
-            }else{
-              // LANDSCAPE LAYOUT
-              return CardLandscape(width: constraints.maxWidth);
-            }
-          },
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Color(0xff82A0D8),
+                Color(0xff7BD3EA),
+              ],
+            ),
+          ),
+          child: LayoutBuilder(
+            builder: (BuildContext context, constraints) {
+              if (constraints.maxWidth < 600) {
+                // POTRAIT LAYOUT
+                return CardPotrait(width: constraints.maxWidth);
+              } else {
+                // LANDSCAPE LAYOUT
+                return CardLandscape(width: constraints.maxWidth);
+              }
+            },
+          ),
+        ),
       ),
     );
   }
 }
-
