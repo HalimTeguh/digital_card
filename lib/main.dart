@@ -1,3 +1,4 @@
+import 'package:digital_card/Layout/card_landscape.dart';
 import 'package:digital_card/Layout/card_potrait.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
               return CardPotrait(width: constraints.maxWidth);
             }else{
               // LANDSCAPE LAYOUT
-              return Container();
+              return CardLandscape(width: constraints.maxWidth);
             }
           },
       ),
