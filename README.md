@@ -1,16 +1,10 @@
-# digital_card
+# Responsive Digital Card 
 
-A new Flutter project.
+This is a <strong>Flutter mini project </strong> from MSIB MIKTI, which is to create an ID card that is responsive to the orientation of mobile devices using <strong>Layout Builder</strong>, this project also utilizes the <strong>Google Font</strong> package for text styling.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+- Landscape
+  ![image](/assets/preview_landscape.png)
+- Potrait
+  ![image](/assets/preview_potrait.png)
+  
